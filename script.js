@@ -34,7 +34,7 @@ resetButton.addEventListener("click", () => {
 function getWeather(location) {
 
 
-fetch(`http://api.weatherapi.com/v1/current.json?key=5b5395cbf8c14f9da16220948231705&q=${location}`)
+fetch(`https://api.weatherapi.com/v1/current.json?key=5b5395cbf8c14f9da16220948231705&q=${location}`)
 .then(response => response.json())
 .then(data => {
    // Extract the desired weather information from the API response
